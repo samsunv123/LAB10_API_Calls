@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Interaction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Lab 10: API Calls</h1>
+
+  <!-- Task 1: Fetch Data with fetch() -->
+  <button id="fetchBtn">Fetch Data with fetch()</button>
+  <div id="fetchResult" class="result"></div>
+
+  <!-- Task 2: Fetch Data with XMLHttpRequest -->
+  <button id="xhrBtn">Fetch Data with XHR</button>
+  <div id="xhrResult" class="result"></div>
+
+  <!-- Task 3: POST Data -->
+  <form id="postForm">
+    <h2>Create a Post</h2>
+    <input type="text" id="postTitle" placeholder="Title" required>
+    <textarea id="postBody" placeholder="Body" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="postResult" class="result"></div>
+
+  <!-- Task 4: PUT Data -->
+  <form id="putForm">
+    <h2>Update a Post</h2>
+    <input type="number" id="postId" placeholder="Post ID" required>
+    <input type="text" id="updateTitle" placeholder="Updated Title" required>
+    <textarea id="updateBody" placeholder="Updated Body" required></textarea>
+    <button type="submit">Update</button>
+  </form>
+  <div id="putResult" class="result"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
